@@ -1,0 +1,20 @@
+{
+  "name": "es6_",
+  "version": "1.0.0",
+  "description": "- Usage examples for ES6 and ES7 APIs",
+  "main": "arrows.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parvezk/es6_apis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parvezk/es6_apis/issues"
+  },
+  "homepage": "https://github.com/parvezk/es6_apis#readme"
+}
