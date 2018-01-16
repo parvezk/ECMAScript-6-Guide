@@ -1,7 +1,6 @@
 
 ## ES6 APIs
-gi
- - Usage examples for ES6/ES7 APIs
+A collection of ES6 syntaxes for reference.
  
  
  
