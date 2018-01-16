@@ -1,11 +1,5 @@
-### Example user template template
-### Example user template
-
-# IntelliJ project files
-.idea
 *.iml
-out
-gen
+src
 dist
-docs
-# Created by .ignore support plugin (hsz.mobi)
+docs/
+duplicate-array.rtf
