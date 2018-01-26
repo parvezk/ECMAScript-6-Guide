@@ -1,3 +1,4 @@
+// ES6 Arrow functions
 
 'use strict';
 
