@@ -1,6 +1,4 @@
 *.iml
-src
-dist
 docs/
 duplicate-array.rtf
 .DS_Store
