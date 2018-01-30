@@ -1,6 +1,44 @@
-// ES6 Arrow functions
-
+// Arrow Function *******************************
 'use strict';
+
+var getPrice = () => 5.99;
+//console.log(typeof getPrice, getPrice());
+
+var getPrice2 = count => count * 4.00;
+//console.log(getPrice2(2));
+
+var getPrice3 = (count, tax) => count * 4.00 * (1 + tax);
+//console.log(getPrice3(2, .07));
+
+var getPrice4 = (count, tax) => {
+    let price = count * Math.random();
+    price *= (1 + tax);
+    return price;
+}
+//console.log(getPrice4(2, 0.07));
+
+document.addEventListener('click', () => console.log(this));
+//window
+
+var invoice = {
+    number: 123,
+    process: function(){
+        return () => console.log(this.number);
+    }
+};
+//invoice.process()();
+// this -> context in which func is running
+
+var newInvoice = {
+    number: 456
+}
+
+//invoice.process().bind(newInvoice)();
+//invoice.process().call(newInvoice);
+// call/bind useless, cannot change value of this
+
+var getPrice5 = () => 5.99;
+//console.log(getPrice5.hasOwnProperty('prototype'), getPrice5.prototype.constructor)
 
 /* example 1 */
 
@@ -16,20 +54,17 @@ console.log(pi());
 /* example 2 */
 
 ;(function(){
-
     var f = (a, b) => { let c = [a, b];
         return c; };
     console.log(f(1, 2));
 }.call({'a':1}));
 
 ;(function(){
-
     var f = () => this;
     console.log(f());
 }.call({'a':1}));
 
 ;(function(){
-
     var f = (a) => a;
     console.log(f(1))
 }.call({'a':1}));
