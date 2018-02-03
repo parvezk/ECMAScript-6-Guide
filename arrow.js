@@ -17,24 +17,25 @@ var getPrice4 = (count, tax) => {
 }
 //console.log(getPrice4(2, 0.07));
 
-document.addEventListener('click', () => console.log(this));
 //window
+document.addEventListener('click', () => console.log(this));
 
+// method arrow function
 var invoice = {
     number: 123,
     process: function(){
         return () => console.log(this.number);
     }
 };
-//invoice.process()();
+invoice.process()();
 // this -> context in which func is running
 
 var newInvoice = {
     number: 456
 }
 
-//invoice.process().bind(newInvoice)();
-//invoice.process().call(newInvoice);
+invoice.process().bind(newInvoice)();
+invoice.process().call(newInvoice);
 // call/bind useless, cannot change value of this
 
 var getPrice5 = () => 5.99;
