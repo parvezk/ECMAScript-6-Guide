@@ -29,3 +29,13 @@ var getTotal4 = (price, tax = 0.07) => {
     console.log(arguments.length, typeof arguments[0]);
 }
 //getTotal4(5.00);
+
+var getTotal5 = (price = adjustment, adjustment = 1.00) => {
+    console.log(price + adjustment);
+};
+getTotal5();
+
+var getTotal = (price = adjustment, adjustment = 1.00) => {
+    console.log(price + adjustment);
+}
+getTotal(5.00);
