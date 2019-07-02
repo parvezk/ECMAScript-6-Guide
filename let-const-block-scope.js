@@ -1,5 +1,5 @@
 
-// let, const and Block scoping *******************************
+// let, const and block scoping *******************************
 'use strict';
 
 let productId = 12;
