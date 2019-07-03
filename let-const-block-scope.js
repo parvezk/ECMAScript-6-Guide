@@ -18,6 +18,11 @@ for (const [index, value] of posUpdates.entries()) {
   }
 }
 
+for (const [index, value] of Array.from(posUpdates.entries())) {
+  a = Object.values(value)[0] / M;
+  positions.push(a);
+}
+
 let productId = 12;
 {
   let productId = 2000;
