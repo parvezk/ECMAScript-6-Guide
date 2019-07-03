@@ -2,6 +2,17 @@
 // let, const and block scoping *******************************
 'use strict';
 
+let set = Array.from(Array(N), (x, index) => {
+    return 0;
+});
+
+for (const [index, value] of set.entries()) {
+    if (value) {
+      if (isNextMoveValid(value, index))
+        movables.push(value);
+    }
+  }
+
 let productId = 12;
 {
     let productId = 2000;
