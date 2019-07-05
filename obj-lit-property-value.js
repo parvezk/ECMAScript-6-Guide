@@ -1,5 +1,5 @@
-// property value shorthand
 
+// property value shorthand
 var awe = 'some';
 var foo = { awe };
 var baz = { foo };
