@@ -37,6 +37,7 @@ console.log(productId2);
 function updateProductId() {
   productId = 12;
 }
+
 let productId = null;
 updateProductId();
 console.log(productId);
