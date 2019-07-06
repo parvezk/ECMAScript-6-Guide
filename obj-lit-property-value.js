@@ -1,4 +1,5 @@
 
+
 // property value shorthand
 var awe = 'some';
 var foo = { awe };
